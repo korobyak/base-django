@@ -5,6 +5,7 @@
   "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
-  "build": "webpack --mode production"
+  "build": "webpack --mode production",
+  "main": "src/index.js"
 }
 }
