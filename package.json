@@ -1,11 +1,22 @@
 {
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
   },
+  "name": "store",
+  "homepage": "https://korobyak.github.io/base-django/",
   "scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
-  "build": "webpack --mode production",
-  "main": "src/index.js"
-}
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "webpack": {
+    "entry": "./src/index.js",
+    "output": {
+      "filename": "bundle.js",
+      "path": "dist"
+    }
+  }
 }
