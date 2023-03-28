@@ -3,8 +3,8 @@ from django.contrib import auth, messages
 from django.urls import reverse
 from django.contrib.auth.decorators import login_required
 
-from users.forms import UserLoginForm, UserRegistrationForm, UserProfileForm
-from products.models import Bucket
+from src.users.forms import UserLoginForm, UserRegistrationForm, UserProfileForm
+from src.products.models import Bucket
 
 # Create your views here.
 def login(request):

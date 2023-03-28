@@ -1,6 +1,6 @@
 from django.urls import path
 
-from products.views import products, bucket_add, bucket_remove
+from src.products.views import products, bucket_add, bucket_remove
 
 app_name = 'products'
 

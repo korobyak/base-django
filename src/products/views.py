@@ -2,8 +2,8 @@ from django.shortcuts import render, HttpResponseRedirect
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 
-from products.models import ProductCategory, Product, Bucket
-from users.models import User
+from src.products.models import ProductCategory, Product, Bucket
+
 
 # Create your views here.
 def index(request):
